@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title>Кваст</title>
-    <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="css.css">
 </head>
 <body>
 <div class="page-header">
@@ -186,16 +186,16 @@
         <form class="feedback-form" action="/kvast-mail" method="post">
             <div class="feedback-form-group">
                 <label for="fullname">Представьтесь:</label>
-                <input type="text" name="fullname" id="fullname" placeholder="Как мы можем к вам обращаться?">
+                <input type="text" name="fullname" id="fullname" placeholder="Как мы можем к вам обращаться?" required>
             </div>
             <div class="feedback-form-group-phones">
                 <div class="feedback-form-group feedback-form-group-main-phone">
                     <label for="phone">Номер телефона:</label>
-                    <input type="text" name="phone" id="phone" placeholder="+7 (ххх) ххх-хх-хх">
+                    <input type="text" name="phone" id="phone" placeholder="+375хх-ххх-хх-хх" required>
                 </div>
                 <div class="feedback-form-group feedback-form-group-extra-phone">
                     <label for="extra-phone">Доп. номер:</label>
-                    <input type="text" name="extra-phone" id="extra-phone" placeholder="+7 (ххх) ххх-хх-хх">
+                    <input type="text" name="extra-phone" id="extra-phone" placeholder="+375хх-ххх-хх-хх">
                 </div>
             </div>
             <div class="feedback-form-group">
@@ -249,7 +249,7 @@
             </div>
             <div class="footer-copyright">
                 <img src="img/htmlacademy.png" height="34" width="27" alt="HTML Academy">
-                <b>Разработчик: <a href="https://htmlacademy.ru">HTML Academy</a></b>
+                <b>Разработчик: <a class="developer" href="https://htmlacademy.ru">HTML Academy</a></b>
             </div>
         </div>
     </div>

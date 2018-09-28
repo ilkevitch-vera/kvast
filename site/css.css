@@ -24,7 +24,7 @@ body {
 
 .page-header {
     padding-top: 60px;
-    background: url("../img/header.jpg") center no-repeat;
+    background: url("img/header.jpg") center no-repeat;
     background-size: cover;
     min-height: 470px;
 }
@@ -37,7 +37,6 @@ body {
 
 .header-top {
     display: flex;
-    flex-wrap: wrap;
 }
 
 .header-logo,
@@ -174,6 +173,7 @@ body {
     padding: 12px 21px;
     border: 2px solid #834700;
     background-color: #834700;
+    box-shadow: 0 5px 5px -2px;
     color: white;
     text-align: center;
     text-transform: uppercase;
@@ -187,11 +187,13 @@ body {
     border: 2px solid #4d2402;
     color: #4d2402;
     cursor: pointer;
+    box-shadow: 2px 2px 10px 4px;
 }
 
 .btn:active {
     background-color: #e7b66a;
     border: 2px solid #4d2402;
+    box-shadow: inset 1px 1px 5px 1px;
     color: white;
     cursor: pointer;
 }
@@ -202,8 +204,12 @@ body {
     color: #4d2402;
 }
 
+.catalog-btn-buy {
+    box-shadow: 0 5px 5px -2px black;
+}
+
 .catalog-description b {
-    padding: 20px;
+    padding: 5px;
 }
 
 .features {
@@ -246,7 +252,7 @@ body {
     top: -10px;
     width: 65px;
     height: 90px;
-    background: url("../img/features.png") no-repeat;
+    background: url("img/features.png") no-repeat;
 }
 
 .feature-boil::before {
@@ -269,6 +275,7 @@ body {
 .feature-item p {
     line-height: 32px;
     padding-top: 10px;
+    font-size: 15px;
 }
 
 .history-reference {
@@ -346,9 +353,7 @@ body {
 }
 
 .review-item {
-    background: url("../img/blockquote.png") no-repeat;
-    margin: 0;
-    padding: 0;
+    background: url("img/blockquote.png") no-repeat 0 0;
 }
 
 .review-item p {
@@ -423,7 +428,7 @@ body {
     text-transform: uppercase;
     color: black;
     font-weight: bold;
-    width: 405px;
+    width: 400px;
 }
 
 .range-alc {
@@ -477,8 +482,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     width: 95%;
-    margin: auto;
-    margin-bottom: 10px;
+    margin: auto auto 10px;
 }
 
 .feedback-form-group label{
@@ -487,6 +491,13 @@ body {
     flex-shrink: 0;
     align-self: center;
     width: 25%;
+}
+
+input:required {
+    background: url(https://htmlacademy.ru/assets/course58/required.png) no-repeat 100% 50%;
+}
+input[type="text"]:optional {
+    background: url(https://htmlacademy.ru/assets/course58/optional.png) no-repeat right 50%;
 }
 
 .feedback-form-group input[type="text"],
@@ -515,6 +526,8 @@ body {
     border: 2px solid #4d2402;
 }
 
+
+
 .feedback-form-group-phones {
     display: flex;
     flex-wrap: wrap;
@@ -529,7 +542,7 @@ body {
 }
 
 .feedback-form-group-main-phone input{
-    max-width: 180px;
+    max-width: 194px;
 }
 
 .feedback-form-group-extra-phone {
@@ -587,6 +600,7 @@ input[type="checkbox"] {
     background-color: #834700;
     color: white;
     font-size: 16px;
+    box-shadow: 0 5px 5px -2px black;
 }
 
 .page-footer {
@@ -615,7 +629,7 @@ input[type="checkbox"] {
     height: 65px;
     vertical-align: middle;
     color: #ffffff;
-    background: url("../img/social-btn.png") no-repeat;
+    background: url("img/social-btn.png") no-repeat;
     border: 1px solid rgba(255, 255, 255,0.1);
 }
 
@@ -660,16 +674,21 @@ input[type="checkbox"] {
 
 .footer-copyright b {
     align-self: flex-start;
-    padding: 12px 0 0 35px;
+    padding: 20px 0 0 35px;
     font-size: 14px;
     color: #a38b70;
 }
 
-.footer-copyright a {
+.developer {
     align-self: flex-start;
     padding-top: 12px;
     text-decoration: none;
     color: #a38b70;
+}
+
+.developer:hover {
+    text-decoration: underline;
+    text-shadow: 2px 2px 10px;
 }
 
 
